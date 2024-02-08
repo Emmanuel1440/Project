@@ -1,0 +1,15 @@
+//Power of two(Q.3)Write aprogram  that takes an integer as input and returns true if the input is a power of two
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (n > 0 && (n & (n - 1)) == 0) {
+        printf("True\n", n);
+    } else {
+        printf("False\n", n);
+    }
+
+    return 0; 
+}

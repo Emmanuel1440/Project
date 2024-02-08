@@ -1,0 +1,15 @@
+//Fibonacci sequence(Q.2)Write a program to generate the Fibonacci sequence
+#include <stdio.h>
+int main() {
+    int first = 0, second = 1, next;
+    printf("Fibonacci Sequence.....\n");
+    while (first <= 100) {
+        printf("%d, ", first);
+        next = first + second;
+        first = second;
+        second = next;
+    }
+    printf("\n");
+
+    return 0;
+}
